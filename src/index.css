@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root{
+  --primary-bg-color: #F4F4F4;
+  --primary-text-color: #6358dc;
+  --border-r: 10px;
+  --fs-7: 0.8rem;
+}
+.fs-7{
+  font-size: var(--fs-7);
+}
+.border-r{
+  border-radius: var(--border-r);
+}
+.primary-bg-color{
+  background: var(--primary-bg-color)  !important;
+}
+.primary-text-color{
+  color: var(--primary-text-color);
+}
+.secondary-bg-color{
+  background: var(--primary-text-color);
+}
+.shadow-button{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E2E2E2;
+}
+.border-or{
+  border-bottom: 1px solid #E2E2E2;
+}
+.divider {
+display: flex;
+align-items: center;
+width: 100%;
+margin: 20px 0;
+gap: 20px;
+}
+
+.divider-line {
+flex-grow: 1;
+height: 1px;
+background-color: #e5e7eb;
+}
+
+.divider-text {
+color: #6b7280;
+font-size: 14px;
+font-weight: 500;
+text-transform: uppercase;
+padding: 0 10px;
+}
+.border-none{
+  border: none !important;
+}
+.outline-none{
+  outline: none !important;
+}
+.checkbox-fill{
+  fill: var(--primary-bg-color);
+}
+.form-control input:focus-visible{
+  outline: none;
+}
+.responsive-width {
+  width: 100%;
+}
+
+@media (min-width: 992px) { 
+  .responsive-width {
+    width: 50%;
+  }
+}
